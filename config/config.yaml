@@ -1,0 +1,48 @@
+# config/config.yaml
+api:
+  alpha_vantage:
+    api_key: ${ALPHA_VANTAGE_API_KEY}
+    base_url: "https://www.alphavantage.co/query"
+    retry_attempts: 3
+    retry_delay: 60  # seconds
+    rate_limit: 5
+  yahoo_finance:
+    retry_attempts: 3
+    retry_delay: 60  # seconds
+    rate_limit: 2000
+
+database:
+  schema_name: public
+  tables:
+    stocks: stocks
+    daily_prices: daily_prices
+
+postgres:
+  host: ${POSTGRES_HOST}
+  port: ${POSTGRES_PORT}
+  database: ${POSTGRES_DB}
+  user: ${POSTGRES_USER}
+  password: ${POSTGRES_PASSWORD}
+
+data_quality:
+  checks:
+    price_range:
+      enabled: true
+      min_price: 0.01
+      max_price: 1000000
+    volume:
+      enabled: true
+      min_volume: 0
+    missing_data:
+      enabled: true
+      max_missing_percentage: 10 # maximum allowed percentage of null values
+
+airflow:
+  dag_schedule_interval: "@daily"
+  start_date: "2024-01-01"
+  retries: 3
+  retry_delay_minutes: 5
+
+dashboard:
+  refresh_interval: 300  # seconds
+  default_symbols: ["AAPL", "GOOGL", "MSFT", 'AMZN', 'META']

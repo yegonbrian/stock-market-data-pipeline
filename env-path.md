@@ -1,0 +1,1 @@
+source /home/kybrian/.local/share/virtualenvs/stock-market-data-pipeline-wGN4HYMo/bin/activate

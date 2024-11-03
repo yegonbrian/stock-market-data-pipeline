@@ -18,6 +18,9 @@ alpha-vantage = "*"
 streamlit = "*"
 plotly = "*"
 alembic = "*"
+apache-airflow = ">=2.8.0"
+apache-airflow-providers-postgres = "*"
+apache-airflow-providers-http = "*"
 
 [dev-packages]
 # Testing
