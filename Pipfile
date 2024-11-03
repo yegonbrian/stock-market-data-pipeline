@@ -1,0 +1,41 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# Core Data Processing
+pandas = "*"
+requests = "*"
+# Database
+sqlalchemy = "*"
+psycopg2-binary = "*"
+# Utilities
+python-dotenv = "*"
+pyyaml = "*"
+yfinance = "*"
+alpha-vantage = "*"
+streamlit = "*"
+plotly = "*"
+alembic = "*"
+
+[dev-packages]
+# Testing
+pytest = "*"
+# Linting and Formatting
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+jupyter = "*"
+ipykernel = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.3"
+
+[scripts]
+test = "pytest"
+lint = "flake8 ."
+format = "black ."

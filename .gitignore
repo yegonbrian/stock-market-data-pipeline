@@ -1,0 +1,111 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Airflow
+airflow.db
+airflow.cfg
+webserver_config.py
+logs/
+airflow/logs/
+airflow/plugins/
+airflow/*.pid
+
+# Data and Notebooks
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.pickle
+*.pkl
+.ipynb_checkpoints
+notebooks/.ipynb_checkpoints/
+data/raw/
+data/processed/
+data/interim/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.psql
+*.dump
+
+# Logs and Local Files
+*.log
+logs/
+tmp/
+temp/
+.coverage
+htmlcov/
+coverage.xml
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Configuration files
+# Uncomment these if you don't want to track configuration files
+#config/*.yaml
+#config/*.yml
+#config/*.json
+
+# Environment Variables - ALWAYS IGNORE
+.env
+.env.local
+.env.*.local
+*.env
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# System Files
+.DS_Store
+Thumbs.db
